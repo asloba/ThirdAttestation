@@ -1,26 +1,10 @@
+HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-galen
-!src/test/resources/specs/img/*.png
-
-
-allure-results
-allure-report
-
-### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
-*.iws
-*.iml
-*.ipr
-.idea/*
-
-### Eclipse ###
+### STS ###
 .apt_generated
 .classpath
 .factorypath
@@ -28,6 +12,13 @@ allure-report
 .settings
 .springBeans
 .sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+/idea/*.xml
 
 ### NetBeans ###
 /nbproject/private/
@@ -38,3 +29,6 @@ allure-report
 build/
 !**/src/main/**/build/
 !**/src/test/**/build/
+
+### VS Code ###
+.vscode/
