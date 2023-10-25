@@ -5,7 +5,7 @@ import com.codeborne.selenide.Selenide;
 
 public class Configurator {
     public static void setConfiguration(){
-        Configuration.pageLoadTimeout = 60000;
+        Configuration.pageLoadTimeout = 90000;
         Configuration.browserSize = "1920x1070";
     }
 
