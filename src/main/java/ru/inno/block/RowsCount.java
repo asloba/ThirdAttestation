@@ -1,4 +1,4 @@
-package ru.inno.page.block;
+package ru.inno.block;
 
 public enum RowsCount {
 

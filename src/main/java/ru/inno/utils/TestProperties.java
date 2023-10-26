@@ -27,14 +27,6 @@ public class TestProperties {
         deleteAllEndpoint = getPropertyHandler(properties, "deleteAll.endpoint", "/BookStore/v1/Books");
     }
 
-    public static TestProperties getProperties() {
-        return PropsHolder.instance;
-    }
-
-    private static class PropsHolder {
-        public static final TestProperties instance = new TestProperties();
-    }
-
     public String getBaseUrl() {
         return baseUrl;
     }
@@ -61,5 +53,13 @@ public class TestProperties {
 
     public String getDeleteAllEndpoint() {
         return deleteAllEndpoint;
+    }
+
+    public static TestProperties getProperties() {
+        return PropsHolder.instance;
+    }
+
+    private static class PropsHolder {
+        public static final TestProperties instance = new TestProperties();
     }
 }

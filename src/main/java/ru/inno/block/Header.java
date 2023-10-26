@@ -1,4 +1,4 @@
-package ru.inno.page.block;
+package ru.inno.block;
 
 import com.codeborne.selenide.Condition;
 import org.openqa.selenium.By;
@@ -7,13 +7,16 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class Header {
 
-    By usernameLabel = By.id("#userName-value");
+    public Header() {
+    }
 
-    public void checkUserName(String username) {
+    static By usernameLabel = By.id("userName-value");
+
+    public static void checkUserName(String username) {
         $(usernameLabel).shouldHave(Condition.text(username));
     }
 
-    public void awaitUserNameLabelAppears() {
+    public static void awaitUserNameLabelAppears() {
         $(usernameLabel).shouldBe(Condition.visible);
     }
 }
